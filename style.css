@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+label.theme {
+    font-size: medium;
+    padding: 0;
+}
+
+.border {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.header1 {
+    display: flex;
+    padding: 20px;
+}
+

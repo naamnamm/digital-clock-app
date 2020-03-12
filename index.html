@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--header-->
+        <header>
+            <div class="header-container">
+                <div class="header1"> 
+                    <!-- <div class="inside-header1"> -->
+                        <div class="theme border"> 
+                            <label for="theme" class="theme">Theme</label>
+                            <select name="theme" id="theme">
+                                <option value="0">Simple</option>
+                                <option value="1">Digital</option>
+                                <option value="2">Classy</option>
+                            </select>
+                        </div> <!--close theme div-->
+
+                        <div id="font-size" class="border"> 
+                            <label for="font-size">Font Size</label>
+                            <input id="font-size"/>
+                        </div> <!--close font-size div-->
+
+                        <div class="icon-color border"> 
+                            <label for="icon-color">Font Size</label>
+                            <input type="color" class="icon-color"/>
+                        </div> <!--close icon-color div-->
+
+                    <!-- </div> close inside-header1 -->
+                </div> <!--close header1-->
+            </div> <!--close header-container-->
+        </header>
+        
+        <!-- Navbar -->
+        <div>
+        <nav>
+            <ul>
+                <li>Timer Tab</li>
+                <li>Source Code</li>
+                <li>Author</li>
+                <li>Donate</li>
+            </ul>
+        </nav>
+        </div>
+
+        <main>
+            <div class="display-time">
+                <p id="demo"></p>
+            </div>
+
+            <input placeholder="Enter some text" name="name"/>
+            <p id="values"> log here</p>
+            
+            <button id="button"> submit </button>
+
+        </main>
+        <script src="script.js"></script>
+    </body>
+
+</html>
