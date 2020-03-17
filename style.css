@@ -1,19 +1,114 @@
 body {
     margin: 0;
+    background: url("https://www.itl.cat/pngfile/big/13-133148_photo-wallpaper-time-watch-alarm-clock-clock-time.jpg")
+    no-repeat fixed center;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
-label.theme {
-    font-size: medium;
-    padding: 0;
-}
 
 .border {
     border: 1px solid black;
     padding: 10px;
 }
 
+
 .header1 {
+    border: 1px solid red;
     display: flex;
+    justify-content: center;
     padding: 20px;
+    background-color: lightgrey;
+    color: black;
+} 
+
+/* Hover effect on header */
+.header-container div {
+    visibility: hidden;
+  }
+  
+  .header-container:hover div {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.8s ease 0.5s;
+  }
+
+/* header1 - input font size */
+#font-size {
+    width: 50px;
+}
+
+#icon-color {
+    border-radius: 5px;
+}
+
+/* header1 - toggle switch */
+.divToggle, .toggleWrapper {
+    border: 1px solid red;
+}
+
+.divToggle {
+    padding: 5px;
+    display: flex;
+} 
+
+   /* 1. The switch - the box around the slider */
+.toggleSwitch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+   /* 2. Hide default HTML checkbox input type="checkbox" */
+.toggleSwitch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+   /* 3. The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+  }
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+
+/*------------------------------------------------ */
+
+/* Main section - display time */
+.timeWrapper {
+    margin: 50px;
+    margin-bottom: 0;
+}
+
+#time {
+    /* text-align: center; */
+    font-size: 100px;
 }
 
