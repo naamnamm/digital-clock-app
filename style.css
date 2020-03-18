@@ -4,6 +4,7 @@ body {
     no-repeat fixed center;
     color: white;
     font-family: Helvetica, Arial, sans-serif;
+    background-size: cover;
 }
 
 
