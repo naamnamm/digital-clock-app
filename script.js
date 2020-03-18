@@ -24,11 +24,7 @@ function updateValue(e) {
 
 //----------------------------------------------------------------------
 
-//3. icon color
-
-//----------------------------------------------------------------------
-
-// 4. switch toggle to show date
+// 3. switch toggle to show date
 var days = {
     1: "Monday",
     2: "Tuesday",
@@ -69,34 +65,3 @@ function displayDate() {
 }
 
 //---------------------------------------------------------
-// 5. switch toggle for 12 hrs
-
-
-//--------------------------------------------------------------------
-
-
-
-
-//--------------------------------------------------------------------
-//https://stackoverflow.com/questions/6348494/addeventlistener-vs-onclick
-
-//if else with event listener
-//https://stackoverflow.com/questions/27731812/simple-if-else-onclick-then-do
-
-//awesome video for Event Listener
-//https://www.youtube.com/watch?v=EaRrmOtPYTM&list=PLyuRouwmQCjnEupVi5lpP6VrLg-eO-Zcp
-
-//research on toggle
-//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_dark_mode
-//https://codepen.io/nevan/pen/kBItz
-
-//research on setting font size for time
-//https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event
-//https://www.youtube.com/watch?v=F3odgpghXzY
-
-//access the dom
-//https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript
-
-//display visibility: hidden
-//https://stackoverflow.com/questions/4929310/why-isnt-css-visibility-working
-//https://tympanus.net/codrops/css_reference/visibility/
