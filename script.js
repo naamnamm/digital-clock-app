@@ -1,18 +1,29 @@
 //1. Make a clock to tick
+let isMilitary = false;
 
 let text = document.getElementById('time');
 
+
 function myTimer() {
-    
-    text.innerHTML = new Date().toLocaleTimeString();
-    // or console.log(${today.getHours()});
+    if (isMilitary == true) {
+      text.innerHTML = `${new Date().getHours()}:${new Date().getMinutes()}:${formatTime()}`
+    } else {
+      text.innerHTML = new Date().toLocaleTimeString();
+    }
 }
 
 myTimer();
 setInterval(myTimer, 1000);
-//-------------------------------------------------------------------
 
-//2. manipulate font-size with input field
+function formatTime() {
+  let second = new Date().getSeconds();
+  if (second < 10) {
+    return `0${second}`
+  } else {
+    return second;
+  }
+}
+
 const input = document.getElementById('font-size');
 
 input.addEventListener('input', updateValue);
@@ -22,33 +33,30 @@ function updateValue(e) {
     text.style.fontSize = e.target.value + "px";
 };
 
-//----------------------------------------------------------------------
 
-// 3. switch toggle to show date
-var days = {
-    1: "Monday",
-    2: "Tuesday",
-    3: "Wednesday",
-    4: "Thursday",
-    5: "Friday",
-    6: "Saturday",
-    7: "Sunday"
-};
+var days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Saturday",
+];
 
-var months = {
-    0: "January",
-    1: "February",
-    2: "March",
-    3: "April",
-    4: "May",
-    5: "June",
-    6: "July",
-    7: "August",
-    8: "September",
-    9: "October",
-    10: "November",
-    11: "December",
-};
+var months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
 
 const checkBox = document.getElementById("checkBox")
 
@@ -64,30 +72,17 @@ function displayDate() {
   } 
 }
 
-//---------------------------------------------------------
-
-//target event 
+ 
 let checkboxMilitaryTime = document.getElementById('checkbox-military-time');
+checkboxMilitaryTime.addEventListener('change', isMilitaryTimeChecked)
 
-function getMilitaryTime () {
-  if (checkboxMilitaryTime.checked) {
-    text.innerHTML = 'hello Naam';
-  }
+function isMilitaryTimeChecked() {
+  isMilitary = checkboxMilitaryTime.checked
 }
 
 
 
-checkboxMilitaryTime.addEventListener('change', getMilitaryTime)
 
 
-//target
-// const checkboxAmPm = document.getElementById("checkboxAmPm")
 
-// //function
-// function switchAmPm {}
-//if  hour > 12 = it's PM >> 12 + get hour(1) = 13 
-let log = console.log;
-let hours = new Date().getHours();
-
-log(new Date().getHours());
 
