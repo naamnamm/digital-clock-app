@@ -8,33 +8,38 @@
     <body>
         <!--header-->
         <div class="header-container">
-            <div class="header1">
-              <div id="fontSizeWrapper" class="border">
+            <div class="header-1">
+              <div id="font-size-wrapper" class="border">
                 <label for="font-size">Font Size</label>
                 <input id="font-size" />
               </div>
-              <!--close font-size div-->
         
-              <div class="divToggle border">
-                <!-- this is displayed as flex -->
-                <div class="showDate">Show Date</div>
-                <div class="toggleWrapper">
-                  <label class="toggleSwitch">
-                    <!--this is displayed as relative-->
+              <div class="div-toggle border">
+                <div class="show-date">Show Date</div>
+                <div class="toggle-wrapper">
+                  <label class="toggle-switch">
                     <input type='checkbox' id='checkBox' />
-                    <!--this is displayed as absolute-->
                     <span class='slider'></span>
                   </label>
                 </div>
               </div>
+
+              <div class="div-toggle border">
+                <div class="show-date">24 Hours</div>
+                <div class="toggle-wrapper">
+                  <label class="toggle-switch">
+                    <input type='checkbox' id='checkbox-military-time' />
+                    <span class='slider'></span>
+                  </label>
+                </div>
+              </div>
+
             </div>
-            <!--close header1-->
           </div>
-          <!--close header-container-->
         </header>
 
         <main>
-            <div class="timeAndDateWrapper">
+            <div class="time-and-date-wrapper">
                 <p id="time"></p>
                 <p id="date"></p>
             </div>

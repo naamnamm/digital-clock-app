@@ -1,11 +1,14 @@
 //1. Make a clock to tick
 
+let text = document.getElementById('time');
+
 function myTimer() {
-    var text = document.getElementById('time');
+    
     text.innerHTML = new Date().toLocaleTimeString();
     // or console.log(${today.getHours()});
 }
 
+myTimer();
 setInterval(myTimer, 1000);
 //-------------------------------------------------------------------
 
@@ -65,3 +68,29 @@ function displayDate() {
 }
 
 //---------------------------------------------------------
+
+//target event 
+let checkboxMilitaryTime = document.getElementById('checkbox-military-time');
+
+function getMilitaryTime () {
+  if (checkboxMilitaryTime.checked) {
+    text.innerHTML = 'hello Naam';
+  }
+}
+
+
+
+checkboxMilitaryTime.addEventListener('change', getMilitaryTime)
+
+
+//target
+// const checkboxAmPm = document.getElementById("checkboxAmPm")
+
+// //function
+// function switchAmPm {}
+//if  hour > 12 = it's PM >> 12 + get hour(1) = 13 
+let log = console.log;
+let hours = new Date().getHours();
+
+log(new Date().getHours());
+
