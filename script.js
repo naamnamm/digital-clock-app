@@ -18,11 +18,8 @@ const input = document.getElementById('font-size');
 input.addEventListener('input', updateValue);
 
 function updateValue(e) {
-    var text = document.getElementById("time") //edit
-    // log.textContent = e.target.value;
+    var text = document.getElementById("time")
     text.style.fontSize = e.target.value + "px";
-    // console.log(e.target.value);
-    // console.log(text);
 };
 
 //----------------------------------------------------------------------
